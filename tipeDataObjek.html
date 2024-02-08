@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const person = {
+      nama: 'putra anggara',
+      alamat: 'bandar lampung',
+      umur: 23
+    }
+    console.table(person);
+
+    //ubah properti / attribut
+    person['nama'] = 'andika'
+    person['alamat'] = 'bandar lampung'
+    person['usia'] = 23
+
+    console.table(person);
+
+    //hapus data
+    delete person['alamat']
+    console.table(person);
+  </script>
+</body>
+</html>

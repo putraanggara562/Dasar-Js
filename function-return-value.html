@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function sayHello (firstName, lastName) {
+      const say = `hello ${firstName} ${lastName}`
+      return say
+
+    }
+
+   const result = sayHello ("putra", "anggara")
+   document.writeln(`${result}`)
+
+
+   function getFinalScore(value) {
+    if(value > 80) {
+      return 'A'
+    } else if(value > 80) {
+      return 'B'
+    } else if(value > 70 ) {
+      return 'C'
+    } else if(value > 60) {
+      return 'D'
+    } else {
+      return 'E'
+    }
+   }
+
+   const value = getFinalScore(90) 
+    document.writeln(`<p>${value}</p>`)
+  
+
+   getFinalScore('A')
+
+   //menghentikan eksekusi dengan return
+
+   function data(array, search) {
+    for(const simpan of array) {
+      console.log(`iterasi ke ${simpan}`);
+      if(simpan === search) {
+        return true
+      }
+    }
+    return false
+   }
+
+   const array = [1,10,2,3,4,5,6,7,8,9,12,44,6,77,55]
+   const search = 7
+   const gabung = data(array, search)
+  document.writeln(`<p>${gabung}</p>`)
+  </script>
+</body>
+</html>

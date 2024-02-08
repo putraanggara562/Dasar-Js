@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const person = {
+      firstName: "putra",
+      lastName: "Anggara"
+    }
+
+    for(const properti in person) {
+      document.writeln(`<p>${properti} : ${person[properti]} </p>`)
+    }
+
+
+    //for in di dalam array
+    const names = ["putra", "anggara"]
+    for(const index in names) {
+      document.writeln(`<p>${index} : ${names}</p>`)
+    }
+  </script>
+</body>
+</html>

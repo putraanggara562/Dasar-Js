@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //truety membaca code dari kiri ke kanan 
+    //mengambil nilai true yang pertama
+
+    console.log("hello" || "");
+    console.log("" || []);
+    console.log("0" || "nol");
+    console.log(0 || "nol");
+    console.log(null|| "Null");
+    console.log(undefined || "Undefined");
+    console.log(0 || false);
+
+    //contoh studi kasus
+    const person = {
+      firstName: "Putra",
+      lastName : "Anggara"
+    }
+
+    const name = person.firstName || person.lastName;
+    console.log(name);
+
+     //AND membaca code dari kiri ke kanan 
+    //mengambil nilai false yang pertama
+
+    console.log("hello" && "");
+    console.log("" && []);
+    console.log("0" && "nol");
+    console.log(0 && "nol");
+    console.log(null && "Null");
+    console.log(undefined && "Undefined");
+    console.log(0 && false);
+
+  </script>
+</body>
+</html>
