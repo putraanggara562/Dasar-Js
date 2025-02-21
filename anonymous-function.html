@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //function di dalam variabel
+      // let say = function(name) {
+      //   document.writeln(`<p>${name}</p>`)
+      // }
 
-    //function di dalam variabel
-    let say = function(name) {
-      document.writeln(`<p>${name}</p>`)
-    }
+      // say("putra")
 
-    say("putra")
+      // //function di dalam parameter
 
-    //function di dalam parameter
+      // function giveMeName(collback) {
+      //   collback("putra")
+      // }
 
-    function giveMeName(collback) {
-      collback("putra")
-    }
+      // giveMeName(function(name) {
+      //   document.writeln(`<p>${$name}</p>`)
+      // })
 
-    giveMeName(function(name) {
-      document.writeln(`<p>${$name}</p>`)
-    })
-  </script>
-</body>
+      let angka = [1, 2, 3, 4, 5, 6, 7, 8];
+
+      let cetak = function angka(e) {
+        console.log(e);
+      };
+
+      angka.forEach(cetak);
+
+      // filter
+
+      let angka1 = [1, 2, 4, 6, 88, 9, 5, 7];
+      let hasil1 = angka1.filter(function (x) {
+        return x == 7;
+      });
+
+      console.log(hasil1);
+    </script>
+  </body>
 </html>

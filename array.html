@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
-    const nama = []
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nama = [];
 
-    const hari = ['senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu']
-    console.table(hari);
+      const hari = ["senin", "selasa", "rabu", "kamis", "jumat", "sabtu"];
+      console.table(hari);
 
-    //push menambah data didalam array
-    nama.push('putra')
-    nama.push('anggara')
-    console.log(nama);
+      for (let i = 0; i < hari.length; i++) {
+        console.log(hari);
+      }
 
-    //mengubah data dalam array
+      //push menambah data didalam array
+      nama.push("putra");
+      nama.push("anggara");
+      console.log(nama);
 
-    hari[5] = 'libur'
-    console.table(hari);
+      //mengubah data dalam array
 
-    //menghapus data dalam array
+      hari[5] = "libur";
+      console.table(hari);
 
-    delete hari[5]
-    console.table(hari);
+      //menghapus data dalam array
 
-  </script>
-</body>
+      delete hari[5];
+      console.table(hari);
+    </script>
+  </body>
 </html>

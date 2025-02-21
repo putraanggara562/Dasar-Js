@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // for(let angka = 1; angka <= 10; angka++) {
+      //   document.writeln( `<p>belajar js ${angka}</p>`)
 
-    
-    for(let angka = 1; angka <= 10; angka++) {
-      document.writeln( `<p>belajar js ${angka}</p>`)
-      
-    }
+      // }
 
-    for(let counter = 1; counter <= 10;) {
-      document.writeln(`<p>ini perulangan ke ${counter}</p>`)
-      counter++;
-    }
-  
+      // for(let counter = 1; counter <= 10;) {
+      //   document.writeln(`<p>ini perulangan ke ${counter}</p>`)
+      //   counter++;
+      // }
+      // for (let nilaiA = 1; nilaiA <= 10; nilaiA++) {
+      //   console.log("hello wordl");
+      // }
 
-  </script>
-</body>
+      let jmlAngkot = 10;
+      let angkotBeroprasi = 6;
+      let noAngkot = 1;
+
+      // while (noAngkot <= angkotBeroprasi) {
+      //   console.log(`angkot no ${noAngkot} beroperasi dengan baik`);
+      //   noAngkot++;
+      // }
+
+      // for (noAngkot = angkotBeroprasi + 1; noAngkot <= jmlAngkot; noAngkot++) {
+      //   console.log(`angkot no ${noAngkot} sedang tidak beroperasi`);
+      // }
+
+      for (noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+        if (noAngkot <= angkotBeroprasi && noAngkot !== 5) {
+          console.log(`no angkot ${noAngkot} sedang beroperasi`);
+        } else if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5) {
+          console.log(`angkot no ${noAngkot} sedang lembur`);
+        } else {
+          console.log(`angkot no ${noAngkot} tidak beroperasi`);
+        }
+      }
+    </script>
+  </body>
 </html>

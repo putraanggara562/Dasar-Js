@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Pengulangan dan array</title>
+  </head>
+  <body>
+    <script>
+      let penumpang = ["angga", undefined, "putra"];
+      let tambahPenumpang = function (namaPenumpang, penumpang) {
+        // jika angkotnya kosong
+        if (penumpang.length == 0) {
+          //tambah penumpang di awal array
+          penumpang.push(namaPenumpang);
+          // kembalikan isi array dan keluar dari function
+          return penumpang;
+        } else {
+          // else
+          // telusuri seluruh kursi isi penumpang
+          for (let i = 0; i < penumpang.length; i++) {
+            // jika ada kursi kosong
+            if (penumpang[i] == undefined) {
+              //tambah penumpang di kursi tersebut
+              penumpang[i] = namaPenumpang;
+              // kembalikan isi array dan keluar dari function
+              return penumpang;
+            }
+
+            // jika sudah ada nama yang sama
+            else if (penumpang[i] == namaPenumpang) {
+              // tampilkan pesan kesalahan
+              console.log(`${namaPenumpang} nama pemumpang sudah ada`);
+              // kembalikan isi array dan keluar dari function
+              return penumpang;
+            }
+            // jika seluruh kursi penuh
+            else if (i == penumpang.length - 1) {
+              // tambah penumpang di akhir array
+              penumpang.push(namaPenumpang);
+              // kembalikan isi array dan keluar dari function
+              return penumpang;
+            }
+          }
+        }
+      };
+
+      //hapus penumpang
+      let hapusPenumpang = function (namaPenumpang, pemumpang) {
+        // jika angkot kosong
+        // tampilkan pesan bahwa angkot kosong dan
+        // tidak mungkin penumpang turun
+        // kembalikan isi array dan keluar dari function
+        // else
+        // telusuri seluruh kursi dari awal
+        // jika nama penupang sesuai
+        // hapus penumpang dengan mengubah namanya
+        // kembalikan isi array dan keluar dari function
+        //jika tidak ada nama yang sesui
+        // tampilkan pesan kesalahan
+        // kembalikan isi array dan keluar dari function
+      };
+    </script>
+  </body>
+</html>

@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
-    function sayHello(firstName, lastName) {
-      document.writeln(`<p>hello ${firstName} ${lastName}</p>`)
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sayHello(firstName, lastName) {
+        document.writeln(`<p>hello ${firstName} ${lastName}</p>`);
+      }
 
-    sayHello("putra", "anggara"),
-    sayHello("budi", "nugroho")
-  </script>
-</body>
+      sayHello("putra", "anggara"), sayHello("budi", "nugroho");
+
+      function tambah(a, b) {
+        return a + b;
+      }
+
+      // let a = parseInt(prompt("Masukan nilai 1 :"));
+      // let b = parseInt(prompt("Masukan nilai 2 :"));
+      // let hasil = tambah(a, b);
+      // console.log(hasil);
+
+      function baru() {
+        return arguments;
+      }
+
+      let result = baru(12, 56, "hi", false);
+      console.log(result);
+
+      //variabel pada arguments
+      let hasil = 0;
+      function coba1() {
+        for (let i = 0; i < arguments.length; i++) {
+          hasil += arguments[i];
+        }
+        return hasil;
+      }
+
+      let a = coba1(1, 5, 3);
+
+      console.log(a);
+    </script>
+  </body>
 </html>

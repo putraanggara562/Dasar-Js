@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
-    const person = {
-      name: 'budi',
-      sayHello: (name) => {
-        console.log(`hello ${name}`);
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // const person = {
+      //   name: 'budi',
+      //   sayHello: (name) => {
+      //     console.log(`hello ${name}`);
+      //   }
+      // }
+      // person.sayHello('dito')
+      // person.sayHello('anugrah')
+
+      //object declarasi
+      function ObjekNama(nama, alamat, nope) {
+        let mhs = {};
+        (mhs.nama = nama), (mhs.alamat = alamat), (mhs.nope = nope);
+        return mhs;
       }
-    }
-    // person.sayHello('dito')
-    person.sayHello('anugrah')
-  </script>
-</body>
+
+      let mhs1 = ObjekNama("angga", "lampung", 89228338);
+      let mhs2 = ObjekNama("dino", "lambar", 83992001);
+
+      // constructor
+      function nama(nama, alamat, email) {
+        (this.nama = nama), (this.alamat = alamat), (this.email = email);
+      }
+      let mhs3 = new nama("putra", "kemiling", "putra@gmail,com");
+    </script>
+  </body>
 </html>
